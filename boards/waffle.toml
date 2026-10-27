@@ -1,0 +1,66 @@
+# Only confirmed information from PJD110 v1.0 readonly report, 2026-10-27.
+# No device-unique IDs, partition image dumps, physical MMIO addresses or keys.
+[board]
+name = "waffle"
+manufacturer = "OnePlus"
+model = "PJD110"
+device_name = "OP5929L1"
+soc = "SM8650"
+platform = "pineapple"
+arch = "arm64"
+android_version = "16"
+coloros_build = "PJD110_16.0.10.501(CN01)"
+kernel_release = "6.1.141-android14-11-o-g659d588fa0da"
+recorded_date = "2026-10-27"
+
+[device_tree]
+model = "Qualcomm Technologies, Inc. Pineapple MTP,waffle"
+compatible = ["qcom,pineapple-mtp", "qcom,pineapple", "qcom,pineapplep-mtp", "qcom,pineapplep", "qcom,mtp"]
+
+[display]
+width_px = 1440
+height_px = 3168
+max_reported_refresh_hz = 120
+interfaces = ["DSI-1", "DSI-2"]
+# Actual panel vendor and panel init sequence are not yet identified.
+panel_controller = "unknown"
+
+[gpu]
+model = "Adreno750v2"
+# kgsl is an Android driver, not proof of an operational XNU GPU driver.
+xnu_driver_status = "unimplemented"
+
+[input]
+android_touch_node_name = "touchpanel"
+touch_controller = "unknown"
+
+[storage]
+controller = "ufshcd"
+page_size_bytes = 4096
+ab_slots = ["a", "b"]
+dynamic_partitions = true
+
+[partition_size_bytes]
+boot_a = 201326592
+boot_b = 201326592
+init_boot_a = 8388608
+init_boot_b = 8388608
+vendor_boot_a = 201326592
+vendor_boot_b = 201326592
+dtbo_a = 25165824
+dtbo_b = 25165824
+vbmeta_a = 65536
+vbmeta_b = 65536
+abl_a = 1048576
+abl_b = 1048576
+recovery_a = 104857600
+recovery_b = 104857600
+super = 17179869184
+
+[port_status]
+uefi_loader = "not_started"
+xnu_kernel = "not_started"
+ufs_driver = "not_started"
+display_driver = "not_started"
+touch_driver = "not_started"
+gpu_driver = "not_started"

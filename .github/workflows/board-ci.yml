@@ -1,0 +1,34 @@
+name: OnePlus 12 Board CI
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'boards/**'
+      - 'tools/**'
+      - 'tests/**'
+      - '.github/workflows/board-ci.yml'
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  board-baseline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run board checks
+        run: python3 -m unittest discover -s tests -v
+      - name: Validate device baseline
+        run: python3 tools/validate_board.py boards/waffle.toml
+      - name: Build metadata baseline
+        run: python3 tools/make_board_bundle.py boards/waffle.toml output
+      - uses: actions/upload-artifact@v4
+        with:
+          name: OnePlus12-waffle-board-baseline
+          path: output/waffle-board-baseline.json
+          if-no-files-found: error
+          retention-days: 30
