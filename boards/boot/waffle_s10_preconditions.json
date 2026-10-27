@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "stage": "S10",
+  "source": "owner-supplied-verified-ColorOS16-FDT-and-previous-board-baseline",
+  "device": "OnePlus 12 PJD110 waffle SM8650",
+  "expected_build": "PJD110_16.0.10.501(CN01)",
+  "runtime_fdt_sha256": "949c54944853d5e4f75ed75d7cfe40e0ec52fe5b4e5db866fd97a96c8f9c131a",
+  "observed_gpu_mmio_base": "0x03d00000",
+  "observed_gmu_mmio_base": "0x03d68000",
+  "observed_gpu_smmu_mmio_base": "0x03da0000",
+  "mmio_ownership_verified_under_xnu": false,
+  "gpucc_runtime_lease_verified_under_xnu": false,
+  "uefi_application_built_and_tested_on_device": false,
+  "usb_c_log_transport_verified": false,
+  "xnu_boot_verified": false,
+  "safe_for_flashing": false,
+  "notes": [
+    "Addresses are DT metadata, not authorization to read or write device registers.",
+    "UEFI EFI_SERIAL_IO_PROTOCOL is not evidence of USB-C connectivity.",
+    "Device model and current ColorOS build must be re-qualified after OS upgrade.",
+    "No iOS image or proprietary firmware is included."
+  ]
+}
