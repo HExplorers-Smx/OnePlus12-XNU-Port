@@ -1,14 +1,7 @@
+# Manually invoked only: no automatic Actions spending on push or pull requests.
 name: OnePlus 12 Board CI
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - 'boards/**'
-      - 'tools/**'
-      - 'tests/**'
-      - '.github/workflows/board-ci.yml'
-  pull_request:
 permissions:
   contents: read
 jobs:
