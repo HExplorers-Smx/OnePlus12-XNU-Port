@@ -1,0 +1,23 @@
+## SPDX-License-Identifier: MIT
+[Defines]
+  INF_VERSION                    = 0x0001001B
+  BASE_NAME                      = WaffleS10Probe
+  FILE_GUID                      = 098db6cf-9bde-4c5f-a570-024113f47976
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 0.1
+  ENTRY_POINT                    = UefiMain
+
+[Sources]
+  WaffleS10Probe.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiBootServicesTableLib
+  UefiLib
+  MemoryAllocationLib
+
+[Protocols]
+  gEfiSerialIoProtocolGuid
