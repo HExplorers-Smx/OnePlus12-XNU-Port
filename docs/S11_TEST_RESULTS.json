@@ -1,0 +1,22 @@
+{
+  "stage": "S11",
+  "date": "2026-10-28",
+  "host_unittest_tests": 110,
+  "host_unittest_failures": 0,
+  "host_unittest_skips_with_owner_private_evidence": 0,
+  "owner_private_evidence": "read_only_reverified_not_distributed",
+  "uefi_entrypoint_mock": "passed_on_host",
+  "fdt_runtime_parse": "waffle_owner_fdt_passed",
+  "foreign_board_rejection": "tested",
+  "uefi_memory_map_rejection": "tested",
+  "wflg_frame_cross_decode": "passed",
+  "sanitizers": "ASan/UBSan host regression passed",
+  "aarch64_coff": "UEFI source and portable C objects compiled using shim headers; not linked EFI",
+  "edk2_build": "not_run_sdk_unavailable",
+  "device_uefi_boot": "unverified",
+  "usb_c_logging": "unverified",
+  "xnu_cpu0": "unverified",
+  "gpu_hardware_acceleration": "not_implemented",
+  "github_actions_runs_started": 0,
+  "flash_operations": 0
+}

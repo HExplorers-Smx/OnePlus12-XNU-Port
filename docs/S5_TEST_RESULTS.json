@@ -1,0 +1,13 @@
+{
+  "phase": "S5",
+  "datetime_utc": "2026-10-27",
+  "result": "PASS",
+  "unittest_count": 59,
+  "private_real_evidence_test": "PASS - external ZIP supplied, not redistributed",
+  "native_C_identity_pin": "PASS",
+  "legacy_board_fields": 27,
+  "hardware_boot_test": "NOT_RUN",
+  "gpu_device_command": "NOT_RUN",
+  "metal_test": "NOT_RUN",
+  "actions_runs_used": 0
+}

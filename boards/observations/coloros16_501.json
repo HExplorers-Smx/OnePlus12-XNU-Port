@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "device": "OnePlus 12",
+  "model": "PJD110",
+  "device_codename": "waffle",
+  "soc": "SM8650",
+  "platform": "pineapple",
+  "build": {
+    "ro.product.model": "PJD110",
+    "ro.product.device": "OP5929L1",
+    "ro.board.platform": "pineapple",
+    "ro.soc.model": "SM8650",
+    "ro.boot.slot_suffix": "_a",
+    "ro.boot.verifiedbootstate": "orange",
+    "ro.boot.dynamic_partitions": "true",
+    "ro.build.version.release": "16",
+    "ro.build.version.security_patch": "2026-08-01",
+    "ro.build.display.id": "PJD110_16.0.10.501(CN01)"
+  },
+  "kernel": {
+    "release": "6.1.141-android14-11-o-g659d588fa0da",
+    "page_size_bytes": 4096
+  },
+  "device_tree": {
+    "model": "Qualcomm Technologies, Inc. Pineapple MTP,waffle",
+    "compatible": [
+      "qcom,pineapple-mtp",
+      "qcom,pineapple",
+      "qcom,pineapplep-mtp",
+      "qcom,pineapplep",
+      "qcom,mtp"
+    ]
+  },
+  "display": {
+    "size_px": [
+      1440,
+      3168
+    ],
+    "modes": {
+      "DSI-1": [
+        "1440x3168x60cmd",
+        "1440x3168x90cmd",
+        "1440x3168x120cmd"
+      ],
+      "DSI-2": [
+        "1440x3168x60cmd",
+        "1080x1660x120cmd",
+        "1440x3168x90cmd",
+        "1440x3168x120cmd"
+      ]
+    }
+  },
+  "gpu": {
+    "model": "Adreno750v2"
+  },
+  "important_input_nodes": [
+    "gpio-keys",
+    "oplus,hall_tri_state_key",
+    "pmic_pwrkey",
+    "touchpanel"
+  ],
+  "partition_count": 147,
+  "partition_size_bytes": {
+    "boot_a": 201326592,
+    "boot_b": 201326592,
+    "init_boot_a": 8388608,
+    "init_boot_b": 8388608,
+    "vendor_boot_a": 201326592,
+    "vendor_boot_b": 201326592,
+    "dtbo_a": 25165824,
+    "dtbo_b": 25165824,
+    "vbmeta_a": 65536,
+    "vbmeta_b": 65536,
+    "abl_a": 1048576,
+    "abl_b": 1048576,
+    "recovery_a": 104857600,
+    "recovery_b": 104857600,
+    "super": 17179869184
+  },
+  "storage": {
+    "controller": "ufshcd"
+  },
+  "valid_root_snapshot": true,
+  "image_flashability": "none",
+  "verified_real_device": true
+}

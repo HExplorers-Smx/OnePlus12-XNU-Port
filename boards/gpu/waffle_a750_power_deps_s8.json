@@ -1,0 +1,175 @@
+{
+  "schema": 1,
+  "project": "waffle-xnu-gpu-s8",
+  "build": "PJD110_16.0.10.501(CN01)",
+  "fdt_sha256": "949c54944853d5e4f75ed75d7cfe40e0ec52fe5b4e5db866fd97a96c8f9c131a",
+  "source": "owner-supplied-active-runtime-fdt",
+  "dependencies": {
+    "gpu": {
+      "clocks": {
+        "resolution": "unresolved-provider",
+        "specifiers": [
+          {
+            "provider_path": "/soc/clock-controller@100000",
+            "provider_phandle": "0x2c",
+            "argument_cells": [
+              37
+            ]
+          },
+          {
+            "provider_path": "/soc/clock-controller@100000",
+            "provider_phandle": "0x2c",
+            "argument_cells": [
+              38
+            ]
+          },
+          {
+            "provider_path": "/soc/clock-controller@3d90000",
+            "provider_phandle": "0x4e",
+            "argument_cells": [
+              0
+            ]
+          },
+          {
+            "provider_path": "/soc/power-controller@c300000",
+            "provider_phandle": "0x3f",
+            "argument_cells": []
+          },
+          {
+            "provider_path": null,
+            "provider_phandle": "0x0",
+            "argument_cells": null
+          }
+        ]
+      }
+    },
+    "gmu": {
+      "clocks": {
+        "resolution": "syntactically-resolved-no-ownership",
+        "specifiers": [
+          {
+            "provider_path": "/soc/clock-controller@3d90000",
+            "provider_phandle": "0x4e",
+            "argument_cells": [
+              4
+            ]
+          },
+          {
+            "provider_path": "/soc/clock-controller@3d90000",
+            "provider_phandle": "0x4e",
+            "argument_cells": [
+              6
+            ]
+          },
+          {
+            "provider_path": "/soc/clock-controller@100000",
+            "provider_phandle": "0x2c",
+            "argument_cells": [
+              14
+            ]
+          },
+          {
+            "provider_path": "/soc/clock-controller@100000",
+            "provider_phandle": "0x2c",
+            "argument_cells": [
+              37
+            ]
+          },
+          {
+            "provider_path": "/soc/clock-controller@3d90000",
+            "provider_phandle": "0x4e",
+            "argument_cells": [
+              0
+            ]
+          },
+          {
+            "provider_path": "/soc/clock-controller@3d90000",
+            "provider_phandle": "0x4e",
+            "argument_cells": [
+              21
+            ]
+          }
+        ]
+      },
+      "mboxes": {
+        "resolution": "syntactically-resolved-no-ownership",
+        "specifiers": [
+          {
+            "provider_path": "/soc/qcom,qmp-aop",
+            "provider_phandle": "0x3cd",
+            "argument_cells": [
+              0
+            ]
+          }
+        ]
+      },
+      "vdd-supply": {
+        "resolution": "syntactically-resolved-no-ownership",
+        "provider_path": "/soc/qcom,gdsc@3d9905c"
+      },
+      "vddcx-supply": {
+        "resolution": "syntactically-resolved-no-ownership",
+        "provider_path": "/soc/qcom,gdsc@3d99108"
+      },
+      "iommus": {
+        "resolution": "syntactically-resolved-no-ownership",
+        "specifiers": [
+          {
+            "provider_path": "/soc/kgsl-smmu@3da0000",
+            "provider_phandle": "0xff",
+            "argument_cells": [
+              5,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    "gpu_smmu": {
+      "clocks": {
+        "resolution": "syntactically-resolved-no-ownership",
+        "specifiers": [
+          {
+            "provider_path": "/soc/clock-controller@3d90000",
+            "provider_phandle": "0x4e",
+            "argument_cells": [
+              18
+            ]
+          },
+          {
+            "provider_path": "/soc/clock-controller@100000",
+            "provider_phandle": "0x2c",
+            "argument_cells": [
+              37
+            ]
+          },
+          {
+            "provider_path": "/soc/clock-controller@100000",
+            "provider_phandle": "0x2c",
+            "argument_cells": [
+              38
+            ]
+          },
+          {
+            "provider_path": "/soc/clock-controller@3d90000",
+            "provider_phandle": "0x4e",
+            "argument_cells": [
+              0
+            ]
+          }
+        ]
+      },
+      "vdd-supply": {
+        "resolution": "syntactically-resolved-no-ownership",
+        "provider_path": "/soc/qcom,gdsc@3d99108"
+      }
+    }
+  },
+  "all_phandles_resolved": false,
+  "hardware_ownership_confirmed": false,
+  "safe_to_issue_power_votes": false,
+  "runtime_provider_required": true,
+  "gpu_clock_tail_has_null_phandle": true,
+  "clock_null_trailer_requires_index_audit": true,
+  "notice": "GPU clocks contains a trailing null phandle 0; named clocks need index audit before calling it a missing provider. Specifier cells are not votes or access grants."
+}

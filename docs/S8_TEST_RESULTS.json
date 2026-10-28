@@ -1,0 +1,23 @@
+{
+  "stage": "S8",
+  "date": "2026-10-28",
+  "scope": "host-only, offline; not a real XNU/GPU device execution test",
+  "unittest_count": 70,
+  "unittest_passed": 70,
+  "unittest_skipped": 0,
+  "c_sanitizers": ["address", "undefined"],
+  "private_evidence_requalification": "passed, read-only, kept outside source package",
+  "board_snapshot_comparison_fields": 27,
+  "board_snapshot_mismatch_count": 0,
+  "clock_tree_unresolved_phandle": "0x0 trailing in GPU clocks; named-index audit still required",
+  "known_unimplemented": [
+    "XNU runtime GPU clock and power owner",
+    "GPU SMMU live 4k context configuration and TLBI",
+    "GMU firmware secure authentication and device HFI observation",
+    "GPU hardware command and fence completion",
+    "iOS Metal hardware acceleration"
+  ],
+  "github_actions_invoked": false,
+  "flashable_image_created": false,
+  "private_binary_in_release": false
+}

@@ -1,0 +1,6 @@
+## SPDX-License-Identifier: MIT
+[Defines]
+  DEC_SPECIFICATION              = 0x00010005
+  PACKAGE_NAME                   = WaffleS11Pkg
+  PACKAGE_GUID                   = 2f79c16e-6d35-41f9-b0b2-b3f503445a89
+  PACKAGE_VERSION                = 0.1

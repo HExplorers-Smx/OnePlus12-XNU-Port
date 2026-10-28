@@ -1,0 +1,27 @@
+{
+  "stage": "S9_clock_runtime_extension",
+  "date": "2026-10-28",
+  "board": "waffle/PJD110",
+  "build": "PJD110_16.0.10.501(CN01)",
+  "clock_named_references": {
+    "gpu": 4,
+    "gmu": 6,
+    "gpu_smmu": 4
+  },
+  "unique_clock_identities": 9,
+  "clock_trailing_zero_padding": 1,
+  "host_tests_count": 90,
+  "host_tests_failed": 0,
+  "host_tests_skipped": 0,
+  "host_sanitizers": [
+    "ASan",
+    "UBSan"
+  ],
+  "private_capture_requalified": true,
+  "real_xnu_clock_driver_implemented": false,
+  "real_smmu_tlbi_implemented": false,
+  "real_gmu_firmware_execution_verified": false,
+  "real_metal_gpu_acceleration": false,
+  "actions_triggered": false,
+  "device_partitions_modified": false
+}

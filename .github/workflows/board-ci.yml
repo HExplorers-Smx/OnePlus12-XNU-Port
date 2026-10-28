@@ -1,4 +1,4 @@
-# Manually invoked only: no automatic Actions spending on push or pull requests.
+# Manually invoked only: prevent spending exhausted Actions minutes on every push.
 name: OnePlus 12 Board CI
 on:
   workflow_dispatch:

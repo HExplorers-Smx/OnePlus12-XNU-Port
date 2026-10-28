@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "stage": "S4",
+  "reference_date": "2026-10-28",
+  "board": "OnePlus 12 / PJD110 / waffle",
+  "firmware_version": "PJD110_16.0.10.501(CN01)",
+  "python_tests": 50,
+  "python_suite_result": "passed (local)",
+  "native_asan_ubsan_s4": "5 S4 tests passed under WAFFLE_SANITIZE=1",
+  "hardware_gpu_boot_tested": false,
+  "metal_tested": false,
+  "actual_pjd110_fdt_binary_verified": false,
+  "matched_gpu_firmware_sha256_verified": false,
+  "github_actions_executed": false,
+  "flashable_images_included": false,
+  "limitations": [
+    "HFI packet fixture from SM8650 OnePlus Ace5, not captured from waffle",
+    "No runtime XNU power, GPU SMMU, GMU/HFI queue or DMA provider",
+    "No source GPU hardware register writes"
+  ]
+}

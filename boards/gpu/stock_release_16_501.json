@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "device": "PJD110",
+  "board": "waffle",
+  "build": "PJD110_16.0.10.501(CN01)",
+  "source": "https://github.com/snowwolf725/OnePlus12-fw-repos/releases/tag/PJD110_16.0.10.501(CN01)",
+  "source_kind": "third_party_public_release_metadata_not_oem_signature_proof",
+  "published_utc": "2026-08-24T08:30:01Z",
+  "assets": [
+    {"name":"boot.zip","asset_id":527312359,"listed_bytes":14737060,"downloaded":false,"sha256":null},
+    {"name":"dtbo.zip","asset_id":527312360,"listed_bytes":1239694,"downloaded":false,"sha256":null},
+    {"name":"vendor_boot.zip","asset_id":527312387,"listed_bytes":15663018,"downloaded":false,"sha256":null},
+    {"name":"vendor_dlkm.zip","asset_id":527312389,"listed_bytes":35295039,"downloaded":false,"sha256":null}
+  ],
+  "gpu_firmware_present": "not_checked",
+  "waffle_dtb_verified": false,
+  "signature_verified": false,
+  "should_flash": false
+}

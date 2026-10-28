@@ -63,4 +63,4 @@ xnu_kernel = "not_started"
 ufs_driver = "not_started"
 display_driver = "not_started"
 touch_driver = "not_started"
-gpu_driver = "not_started"
+gpu_driver = "in_progress"  # Offline ABI planning only; no real XNU GPU backend or MMIO

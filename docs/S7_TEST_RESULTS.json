@@ -1,0 +1,34 @@
+{
+  "stage": "S7",
+  "date": "2026-10-28",
+  "device": "OnePlus 12 PJD110 / Qualcomm SM8650 / Adreno 750 v2",
+  "stock_build": "PJD110_16.0.10.501(CN01)",
+  "full_suite": {
+    "test_count": 66,
+    "passed_with_private_evidence": 66,
+    "skipped_without_private_evidence": 1,
+    "native_compiler": "clang C11 -Wall -Wextra -Werror -pedantic",
+    "asan_ubsan": true,
+    "s5_private_evidence_rechecked_local_only": true,
+    "scope": "host C software page-table build/inspect, HFI queue model, and read-only original evidence hash checking"
+  },
+  "implemented": [
+    "armv8_lpae_stage1_4k_table_descriptors_in_host_ram",
+    "independent_gpu_gmu_host_table_roots",
+    "s7_4k_hfi_scratch_backing_provider",
+    "s6_receive_queue_to_s7_scratch_to_ack_host_test",
+    "fail_closed_alias_collision_and_ambiguity_checks"
+  ],
+  "hardware_proofs": {
+    "gpu_power_on_by_xnu": false,
+    "smmu_hardware_context_configured": false,
+    "smmu_tlbi_or_dma_proven": false,
+    "gmu_device_hfi_ack": false,
+    "gpu_command_executed": false,
+    "hardware_fence_confirmed": false,
+    "ios_metal_acceleration": false
+  },
+  "actions_executed": false,
+  "device_flashes_executed": false,
+  "oem_firmware_bundled": false
+}

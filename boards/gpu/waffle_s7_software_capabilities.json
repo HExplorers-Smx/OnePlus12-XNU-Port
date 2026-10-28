@@ -1,0 +1,33 @@
+{
+  "phase": "S7",
+  "board": "waffle",
+  "soc": "SM8650",
+  "gpu": "Adreno750v2",
+  "basis": "PJD110_16.0.10.501(CN01) hardware evidence verified in S5",
+  "software_tests_only": {
+    "armv8_lpae_4k_three_level_software_descriptors": true,
+    "gpu_gmu_distinct_table_roots": true,
+    "s7_hfi_scratch_backing_provider": true,
+    "s6_ring_to_s7_provider_host_test": true,
+    "ownership_failure_quarantines": true,
+    "readonly_no_flashing": true
+  },
+  "runtime_hardware_verified": {
+    "xnu_runtime_power_clock_owner": false,
+    "gpu_smmu_context_programmed": false,
+    "table_cache_published_to_smmu": false,
+    "sid_5_routing_owned": false,
+    "smmu_tlbi_completed": false,
+    "gmu_firmware_authenticated_on_xnu": false,
+    "hfi_ack_received_by_real_gmu": false,
+    "first_real_gpu_command_completed": false,
+    "metal_acceleration_available": false
+  },
+  "required_platform_owner": [
+    "UEFI and XNU boot handoff and exclusive power-clock lease",
+    "live GPU SMMU stream/context bank authorization and TCR/MAIR/ACTLR",
+    "CPU physical page ownership, cache publication and TLBI",
+    "GMU secure ZAP authentication, reset sequence, IRQ and HFI transport",
+    "hardware fence completion and memory lifetime management"
+  ]
+}

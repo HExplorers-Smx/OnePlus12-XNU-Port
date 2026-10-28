@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "purpose": "document concrete upstream Gen7 HFI format references, never redistribute OEM firmware",
+  "reference_board": "OnePlus Ace 5 / giulia / SM8650 (not waffle)",
+  "reference_repo": "https://github.com/tycykp/UniXNU-OnePlus-Ace5",
+  "upstream_license": "BSD-2-Clause-Patent",
+  "source_files": [
+    {"path": "ios16/gpu/giulia_gpu_hfi_alloc.h", "git_blob_sha1": "689985ebf9714fc2ea69b11301cd121dca676e5e"},
+    {"path": "ios16/gpu/giulia_gpu_hfi.h", "git_blob_sha1": "5198a98ca68d8d10f2eee92cfbde1a2f8e4c3fcb"},
+    {"path": "docs/GPU_STACK_FRAMEWORK.md", "git_blob_sha1": "52c921d82a0d156fb8ffb997bbd6b95b1aba10e9"}
+  ],
+  "reference_first_mem_request": {
+    "header": "0x00700b14",
+    "version": 1,
+    "kind": 2,
+    "flags": "0x33f",
+    "gmu_handle": 2,
+    "bytes": 4096,
+    "on_waffle_observed": false
+  },
+  "matched_pjd110_fdt_binary_acquired": false,
+  "matched_pjd110_gmu_firmware_acquired": false,
+  "waffle_gpu_hardware_started": false,
+  "actual_fence_observed": false,
+  "metal_acceleration_verified": false
+}

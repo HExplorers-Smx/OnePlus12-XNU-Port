@@ -22,3 +22,11 @@ firmware/
 blobs/
 userdata/
 secrets/
+*XNU-Evidence*.zip
+*.mbn
+*.fw
+*.img
+*.dtb
+*.dtbo
+/private/
+/evidence-private/

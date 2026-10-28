@@ -1,0 +1,16 @@
+{
+  "stage":"S8",
+  "board":"waffle",
+  "build":"PJD110_16.0.10.501(CN01)",
+  "chip_id":"0x43051401",
+  "preboot_static_4k_scratch_software_model":true,
+  "separate_sealed_gpu_gmu_smmu_page_tables_host_tested":true,
+  "gen7_hfi_scratch_ack_in_host_queue":true,
+  "gpu_clock_null_phandle_trailer_needs_index_audit":true,
+  "xnu_runtime_power_clock_provider_installed":false,
+  "smmu_hardware_contexts_owned":false,
+  "gmu_real_hfi_ack_confirmed":false,
+  "gpu_hardware_fence_confirmed":false,
+  "metal_hardware_acceleration_verified":false,
+  "safe_to_flash":false
+}

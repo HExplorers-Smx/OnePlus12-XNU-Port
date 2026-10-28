@@ -1,0 +1,26 @@
+{
+  "stage": "S6",
+  "date": "2026-10-28",
+  "device": "OnePlus 12 PJD110 / SM8650",
+  "stock_build": "PJD110_16.0.10.501(CN01)",
+  "full_suite": {
+    "test_count": 63,
+    "passed": 63,
+    "skipped": 0,
+    "private_evidence_rechecked": true,
+    "asan_ubsan": true,
+    "scope": "host CPU only plus read-only analysis of owner-supplied private evidence"
+  },
+  "hardware_proofs": {
+    "gpu_power_on_by_xnu": false,
+    "smmu_runtime_claimed": false,
+    "gmu_device_ack": false,
+    "gpu_command_executed": false,
+    "hardware_fence_confirmed": false,
+    "ios_metal_acceleration": false
+  },
+  "actions_executed": false,
+  "device_flashes_executed": false,
+  "stock_firmware_committed": false,
+  "signed_apple_image_created": false
+}

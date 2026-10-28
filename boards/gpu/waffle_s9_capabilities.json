@@ -1,0 +1,15 @@
+{
+  "stage": "S9",
+  "board": "waffle",
+  "build": "PJD110_16.0.10.501(CN01)",
+  "gpu_named_clocks_four_and_null_trailer_audited_from_owner_fdt": true,
+  "apb_pclk_provider_type_unconfirmed": true,
+  "s8_smmu_guard_dual_readback_hfi_pump_host_tested": true,
+  "requires_exclusive_xnu_runtime_observer": true,
+  "xnu_clock_power_driver_implemented": false,
+  "live_gpu_smmu_programmed": false,
+  "gmu_hfi_device_ack_observed": false,
+  "gpu_command_hardware_fence_verified": false,
+  "metal_acceleration_verified": false,
+  "safe_to_flash": false
+}

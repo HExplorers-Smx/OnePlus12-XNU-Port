@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "board": "waffle",
+  "model": "PJD110",
+  "soc": "SM8650",
+  "android_baseline": "PJD110_16.0.10.501(CN01)",
+  "observed_on_real_device": {
+    "gpu_model": "Adreno750v2",
+    "interface": "/sys/class/kgsl/kgsl-3d0",
+    "display_dsi": ["DSI-1", "DSI-2"],
+    "display_pixels": [1440, 3168],
+    "max_observed_refresh_hz": 120
+  },
+  "reference_not_yet_confirmed_on_waffle": {
+    "linux_sm8650_gpu_chip_id": "0x43051401",
+    "linux_family": "ADRENO_7XX_GEN3",
+    "likely_firmware_names": [
+      "gmu_gen70900.bin",
+      "gen70900_sqe.fw",
+      "gen70900_aqe.fw",
+      "gen70900_zap.mbn"
+    ],
+    "gmem_mib": 3,
+    "sources": [
+      "https://www.mail-archive.com/freedreno@lists.freedesktop.org/msg29878.html",
+      "https://github.com/tycykp/UniXNU-OnePlus-Ace5/blob/main/docs/GPU_BRINGUP.md"
+    ]
+  },
+  "unverified_must_obtain_from_matched_waffle_fdt_and_stock_images": [
+    "gpu_mmio_windows", "gmu_mmio_windows", "gpu_smmu_mmio",
+    "gpu_irqs", "gmu_irqs", "iommu_sids_and_context_bank_ownership",
+    "gpu_power_clocks_rpmh", "signed_firmware_hashes_and_authentication",
+    "driver_abi_ios16", "real_fence_completion", "scanout_to_iosurface_bridge"
+  ],
+  "driver_status": "no_native_gpu_driver_and_no_real_acceleration",
+  "firmware_redistribution": "never_commit_proprietary_firmware"
+}

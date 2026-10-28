@@ -1,0 +1,183 @@
+{
+  "schema": 1,
+  "target": "PJD110/waffle",
+  "build": "PJD110_16.0.10.501(CN01)",
+  "fdt_sha256": "949c54944853d5e4f75ed75d7cfe40e0ec52fe5b4e5db866fd97a96c8f9c131a",
+  "clock_groups": {
+    "gpu": {
+      "clocks": [
+        {
+          "name": "gcc_gpu_memnoc_gfx",
+          "index": 0,
+          "provider_path": "/soc/clock-controller@100000",
+          "provider_phandle": "0x2c",
+          "specifier": [
+            37
+          ],
+          "verified_named_clock": true,
+          "runtime_lease_proven": false
+        },
+        {
+          "name": "gcc_gpu_snoc_dvm_gfx",
+          "index": 1,
+          "provider_path": "/soc/clock-controller@100000",
+          "provider_phandle": "0x2c",
+          "specifier": [
+            38
+          ],
+          "verified_named_clock": true,
+          "runtime_lease_proven": false
+        },
+        {
+          "name": "gpu_cc_ahb",
+          "index": 2,
+          "provider_path": "/soc/clock-controller@3d90000",
+          "provider_phandle": "0x4e",
+          "specifier": [
+            0
+          ],
+          "verified_named_clock": true,
+          "runtime_lease_proven": false
+        },
+        {
+          "name": "apb_pclk",
+          "index": 3,
+          "provider_path": "/soc/power-controller@c300000",
+          "provider_phandle": "0x3f",
+          "specifier": [],
+          "verified_named_clock": true,
+          "runtime_lease_proven": false
+        }
+      ],
+      "zero_trailer_cells": 1,
+      "usable_for_runtime_votes": false
+    },
+    "gmu": {
+      "clocks": [
+        {
+          "name": "gmu_clk",
+          "index": 0,
+          "provider_path": "/soc/clock-controller@3d90000",
+          "provider_phandle": "0x4e",
+          "specifier": [
+            4
+          ],
+          "verified_named_clock": true,
+          "runtime_lease_proven": false
+        },
+        {
+          "name": "cxo_clk",
+          "index": 1,
+          "provider_path": "/soc/clock-controller@3d90000",
+          "provider_phandle": "0x4e",
+          "specifier": [
+            6
+          ],
+          "verified_named_clock": true,
+          "runtime_lease_proven": false
+        },
+        {
+          "name": "axi_clk",
+          "index": 2,
+          "provider_path": "/soc/clock-controller@100000",
+          "provider_phandle": "0x2c",
+          "specifier": [
+            14
+          ],
+          "verified_named_clock": true,
+          "runtime_lease_proven": false
+        },
+        {
+          "name": "memnoc_clk",
+          "index": 3,
+          "provider_path": "/soc/clock-controller@100000",
+          "provider_phandle": "0x2c",
+          "specifier": [
+            37
+          ],
+          "verified_named_clock": true,
+          "runtime_lease_proven": false
+        },
+        {
+          "name": "ahb_clk",
+          "index": 4,
+          "provider_path": "/soc/clock-controller@3d90000",
+          "provider_phandle": "0x4e",
+          "specifier": [
+            0
+          ],
+          "verified_named_clock": true,
+          "runtime_lease_proven": false
+        },
+        {
+          "name": "hub_clk",
+          "index": 5,
+          "provider_path": "/soc/clock-controller@3d90000",
+          "provider_phandle": "0x4e",
+          "specifier": [
+            21
+          ],
+          "verified_named_clock": true,
+          "runtime_lease_proven": false
+        }
+      ],
+      "zero_trailer_cells": 0,
+      "usable_for_runtime_votes": false
+    },
+    "gpu_smmu": {
+      "clocks": [
+        {
+          "name": "gpu_cc_hlos1_vote_gpu_smmu",
+          "index": 0,
+          "provider_path": "/soc/clock-controller@3d90000",
+          "provider_phandle": "0x4e",
+          "specifier": [
+            18
+          ],
+          "verified_named_clock": true,
+          "runtime_lease_proven": false
+        },
+        {
+          "name": "gcc_gpu_memnoc_gfx",
+          "index": 1,
+          "provider_path": "/soc/clock-controller@100000",
+          "provider_phandle": "0x2c",
+          "specifier": [
+            37
+          ],
+          "verified_named_clock": true,
+          "runtime_lease_proven": false
+        },
+        {
+          "name": "gcc_gpu_snoc_dvm_gfx",
+          "index": 2,
+          "provider_path": "/soc/clock-controller@100000",
+          "provider_phandle": "0x2c",
+          "specifier": [
+            38
+          ],
+          "verified_named_clock": true,
+          "runtime_lease_proven": false
+        },
+        {
+          "name": "gpu_cc_ahb",
+          "index": 3,
+          "provider_path": "/soc/clock-controller@3d90000",
+          "provider_phandle": "0x4e",
+          "specifier": [
+            0
+          ],
+          "verified_named_clock": true,
+          "runtime_lease_proven": false
+        }
+      ],
+      "zero_trailer_cells": 0,
+      "usable_for_runtime_votes": false
+    }
+  },
+  "clock_identity_from_applied_fdt": true,
+  "runtime_clock_ownership_proven": false,
+  "gpucc_power_owner_proven": false,
+  "safe_to_write_mmio": false,
+  "notice": "phandles and clock IDs are OEM FDT indices; never convert to rates or direct MMIO write instructions"
+}

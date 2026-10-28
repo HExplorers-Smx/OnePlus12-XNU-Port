@@ -1,0 +1,246 @@
+{
+  "schema": 2,
+  "phase": "S5",
+  "model": "PJD110",
+  "board": "waffle",
+  "soc": "SM8650",
+  "os_build": "PJD110_16.0.10.501(CN01)",
+  "active_slot": "a",
+  "source_kind": "owner_supplied_root_read_only_capture",
+  "input_checksums": {
+    "fdt.dtb": {
+      "bytes": 919577,
+      "sha256": "949c54944853d5e4f75ed75d7cfe40e0ec52fe5b4e5db866fd97a96c8f9c131a",
+      "captured_hash_matches": true
+    },
+    "dtbo.img": {
+      "bytes": 25165824,
+      "sha256": "37c6309514fa79372c4da1315e576bdc8ccb36194d72bda9420585348f842655",
+      "captured_hash_matches": true
+    },
+    "firmware/gmu_gen70900.bin": {
+      "bytes": 78588,
+      "sha256": "9685f62c42543befcaee68d25355e16bf55cdb0d573bddcc9f6633f59eec3f72",
+      "captured_hash_matches": true
+    },
+    "firmware/gen70900_sqe.fw": {
+      "bytes": 85364,
+      "sha256": "f756bafe5f69a87161c7c53385386374a791861a574c244e845baba677993842",
+      "captured_hash_matches": true
+    },
+    "firmware/gen70900_aqe.fw": {
+      "bytes": 33176,
+      "sha256": "25237c161d727b8ea92b4beb837a31651b44ea78bfc34d95672af8f346a45825",
+      "captured_hash_matches": true
+    },
+    "firmware/gen70900_zap.mbn": {
+      "bytes": 12088,
+      "sha256": "8e454000fd86f74818917d34d46baa70a31360d81d9617015a02de4e00c0e397",
+      "captured_hash_matches": true
+    }
+  },
+  "runtime_fdt": {
+    "node_count": 5009,
+    "root_model": "Qualcomm Technologies, Inc. Pineapple MTP,waffle",
+    "adreno_chip_id": "0x43051401",
+    "gpu_mmio": {
+      "gpu": {
+        "cpu_physical_base": "0x3d00000",
+        "size_bytes": 262144
+      },
+      "gmu": {
+        "cpu_physical_base": "0x3d68000",
+        "size_bytes": 225280
+      },
+      "gpu_smmu": {
+        "cpu_physical_base": "0x3da0000",
+        "size_bytes": 262144
+      }
+    },
+    "gic_specifiers": {
+      "gpu": [
+        [
+          0,
+          300,
+          4
+        ]
+      ],
+      "gmu": [
+        [
+          0,
+          304,
+          4
+        ],
+        [
+          0,
+          305,
+          4
+        ]
+      ]
+    },
+    "smmu_stream_ids_not_context_banks": {
+      "user": 0,
+      "lpac": 1,
+      "secure": 2,
+      "gmu": 5
+    },
+    "gmu_clock_provider_paths": [
+      "/soc/clock-controller@3d90000",
+      "/soc/clock-controller@3d90000",
+      "/soc/clock-controller@100000",
+      "/soc/clock-controller@100000",
+      "/soc/clock-controller@3d90000",
+      "/soc/clock-controller@3d90000"
+    ],
+    "gmu_aop_mailbox": "/soc/qcom,qmp-aop",
+    "gmu_supplies": {
+      "vdd-supply": "/soc/qcom,gdsc@3d9905c",
+      "vddcx-supply": "/soc/qcom,gdsc@3d99108"
+    },
+    "runtime_tree_used_not_unapplied_dtbo": true
+  },
+  "dtbo": {
+    "partition_capacity_bytes": 25165824,
+    "dtbo_table_bytes": 6683846,
+    "entry_count": 12,
+    "entry_hashes": [
+      "b6999c2536213420dd5050a3cf9c2a4812f03d5fad4c7e438bb04fcd86c1ebef",
+      "51aeab79e33a8bdbcb14353b1b78c9475a6a4d805999d5c68090aeeefdd7ccaa",
+      "e90dff3144fd7d03fc0a8b15ffd3565c805539b922a08256c976118b420e6a8b",
+      "c74c54c7e30228ee86122dfdc1bb3b869e012f7ed1243786b027b6853b68e68f",
+      "13ee8b40f7f46c192a9cb96f5266c8d1e25c7cd08eea5465f9174750f2056e31",
+      "7a18dd4ea16d47c5a572c68a1cc03df551a9c00ec4b6092ccb84307325273dc9",
+      "4fc45baff814f2effc21baf3cc5d11b97839ace6e62afc3e3ebb1a64bc0c720d",
+      "cbfcfbb3f3eb1a3ac1a07c0a9d96a8ad8ca153a27cde6bfe26b82c38aa3244eb",
+      "62f4f0dfab81e96e0f76b7b2142fb8ebf8d127f38a3e6d8720417da9c4dd160d",
+      "30b5b4240dcb823c7230e757e067ac5f0b8c1a3629d4f4c979a8f654c38a4a3c",
+      "f492414a1a0cc9a9e60df95a4708cd97c91f632f400d9e1697edbced065d663e",
+      "1bf29d5d228baa8dfd0dfde8e8c990a326d1953f3760f86f8dba8cd53d90e04b"
+    ],
+    "applied_overlay_index": "unknown_do_not_guess"
+  },
+  "gmu_firmware": {
+    "block_count": 15,
+    "data_block_count": 4,
+    "persistent_prealloc_count": 2,
+    "blocks": [
+      {
+        "gmu_virtual_address": "0x00000000",
+        "data_size": 0,
+        "metadata_type": 1,
+        "prealloc_bytes": 476,
+        "region": "itcm"
+      },
+      {
+        "gmu_virtual_address": "0x00004000",
+        "data_size": 0,
+        "metadata_type": 1,
+        "prealloc_bytes": 77808,
+        "region": "icache"
+      },
+      {
+        "gmu_virtual_address": "0x00000200",
+        "data_size": 0,
+        "metadata_type": 1,
+        "prealloc_bytes": 14396,
+        "region": "itcm"
+      },
+      {
+        "gmu_virtual_address": "0x00100000",
+        "data_size": 0,
+        "metadata_type": 1,
+        "prealloc_bytes": 109432,
+        "region": "icache"
+      },
+      {
+        "gmu_virtual_address": "0x00200000",
+        "data_size": 0,
+        "metadata_type": 1,
+        "prealloc_bytes": 76928,
+        "region": "icache"
+      },
+      {
+        "gmu_virtual_address": "0x00300000",
+        "data_size": 0,
+        "metadata_type": 1,
+        "prealloc_bytes": 150520,
+        "region": "icache"
+      },
+      {
+        "gmu_virtual_address": "0x10004000",
+        "data_size": 0,
+        "metadata_type": 1,
+        "prealloc_bytes": 11960,
+        "region": "dtcm"
+      },
+      {
+        "gmu_virtual_address": "0x10007000",
+        "data_size": 0,
+        "metadata_type": 1,
+        "prealloc_bytes": 3972,
+        "region": "dtcm"
+      },
+      {
+        "gmu_virtual_address": "0x10007fdc",
+        "data_size": 0,
+        "metadata_type": 1,
+        "prealloc_bytes": 24,
+        "region": "dtcm"
+      },
+      {
+        "gmu_virtual_address": "0x60000000",
+        "data_size": 0,
+        "metadata_type": 7,
+        "prealloc_bytes": 4096,
+        "region": "kernel"
+      },
+      {
+        "gmu_virtual_address": "0x60001000",
+        "data_size": 0,
+        "metadata_type": 7,
+        "prealloc_bytes": 4096,
+        "region": "kernel"
+      },
+      {
+        "gmu_virtual_address": "0x00000000",
+        "data_size": 476,
+        "metadata_type": null,
+        "prealloc_bytes": null,
+        "region": "itcm"
+      },
+      {
+        "gmu_virtual_address": "0x00004000",
+        "data_size": 77808,
+        "metadata_type": null,
+        "prealloc_bytes": null,
+        "region": "icache"
+      },
+      {
+        "gmu_virtual_address": "0x10007f98",
+        "data_size": 40,
+        "metadata_type": null,
+        "prealloc_bytes": null,
+        "region": "dtcm"
+      },
+      {
+        "gmu_virtual_address": "0x10007fdc",
+        "data_size": 24,
+        "metadata_type": null,
+        "prealloc_bytes": null,
+        "region": "dtcm"
+      }
+    ],
+    "parsed_format_only": true,
+    "firmware_authenticated": false
+  },
+  "gpu_hardware_powered_by_xnu": false,
+  "gpu_smmu_ownership_acquired": false,
+  "gmu_hfi_handshake_verified": false,
+  "gpu_command_submitted": false,
+  "hardware_fence_completed": false,
+  "ios_metal_acceleration_verified": false,
+  "firmware_authenticity_proven": false,
+  "may_flash": false,
+  "contains_firmware_bytes": false,
+  "contains_raw_device_tree": false
+}

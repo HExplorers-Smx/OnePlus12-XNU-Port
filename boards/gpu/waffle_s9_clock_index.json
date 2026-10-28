@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "stage": "S9",
+  "board": "waffle",
+  "build": "PJD110_16.0.10.501(CN01)",
+  "runtime_fdt_sha256": "949c54944853d5e4f75ed75d7cfe40e0ec52fe5b4e5db866fd97a96c8f9c131a",
+  "clock_audit": {
+    "named": [
+      {
+        "index": 0,
+        "name": "gcc_gpu_memnoc_gfx",
+        "provider_path": "/soc/clock-controller@100000",
+        "specifier": [
+          37
+        ],
+        "kind": "clock-provider-reference"
+      },
+      {
+        "index": 1,
+        "name": "gcc_gpu_snoc_dvm_gfx",
+        "provider_path": "/soc/clock-controller@100000",
+        "specifier": [
+          38
+        ],
+        "kind": "clock-provider-reference"
+      },
+      {
+        "index": 2,
+        "name": "gpu_cc_ahb",
+        "provider_path": "/soc/clock-controller@3d90000",
+        "specifier": [
+          0
+        ],
+        "kind": "clock-provider-reference"
+      },
+      {
+        "index": 3,
+        "name": "apb_pclk",
+        "provider_path": "/soc/power-controller@c300000",
+        "specifier": [],
+        "kind": "power-controller-reference-unverified"
+      }
+    ],
+    "trailing_phandle_zero": true,
+    "named_specifiers_decoded": true,
+    "power_owner_verified": false,
+    "safe_to_vote_or_write": false,
+    "notice": "The fourth named entry resolves to power-controller, not a proved clock vote. Trailing zero is an unused raw cell."
+  },
+  "clock_configuration_live_verified": false,
+  "hardware_control_available": false,
+  "no_device_operations": true
+}
