@@ -1,0 +1,11 @@
+{
+  "stage": "S13",
+  "date": "2026-10-31",
+  "full_unittest": {"tests": 128, "failures": 0, "errors": 0, "skipped": 0},
+  "s13_specialized": {"tests": 10, "failures": 0, "asan_ubsan": "passed"},
+  "device_evidence": "private PJD110 archive was supplied externally to full suite; it is excluded from this repository",
+  "efi": {"format": "PE32+", "machine": "ARM64 (0xaa64)", "subsystem": "EFI_APPLICATION (10)", "actually_booted_phone": false},
+  "manual_actions_only_check": "passed",
+  "host_uefi_mock": "verified temporary AllocatePages, segment copy, BSS zero-fill, boot_args draft, FreePages",
+  "real_uefi_xnu_handoff": false
+}

@@ -1,0 +1,24 @@
+{
+  "stage": "S13",
+  "board": "waffle",
+  "soc": "SM8650",
+  "kernel_format": "mach-o-arm64",
+  "boot_args_layout": "xnu-12377-draft-only",
+  "uefi_program": "WaffleS13EphemeralStage.efi",
+  "capabilities": {
+    "xnup_payload_verified": true,
+    "device_fdt_validated_by_uefi_preflight": true,
+    "macho_load_commands_validated": true,
+    "macho_segments_staged_into_temporary_uefi_pages": true,
+    "bss_zero_filled": true,
+    "temporary_uefi_pages_released": true,
+    "xnu_chained_fixups_applied": false,
+    "boot_args_ready_for_handoff": false,
+    "edk2_sm8650_firmware_built": false,
+    "exit_boot_services": false,
+    "xnu_control_transfer": false,
+    "waffle_real_device_boot_tested": false,
+    "firmware_or_partition_writes": false
+  },
+  "github_actions_manual_only": true
+}

@@ -1,3 +1,7 @@
+> **S13 新增（2026-10-31）：** 可执行的 AArch64 EFI 中暂存 Mach-O 段装载、BSS 清零与 xnu-12377 `boot_args` 草稿。
+> UEFI AllocatePages / FreePages 已通过宿主模拟完整验证。**没有 XNU 跳转、没有真实 UEFI/XNU 启动，更不是刷机镜像。**
+> 代码与测试见 [S13 实现](docs/S13_HAKIOS_MACHO_STAGING.md)。GitHub Actions 仅手动触发。
+
 > **S12 新增（2026-10-31）：** 已生成真正的 ARM64 UEFI PE/COFF 预检程序 `WaffleS12Preflight.efi`，
 > 并加入 HakiOS XNUP 格式兼容解析和实机设备树校验；**尚不能启动 XNU/iOS**，不可刷写。
 > 代码及运行界限见 [S12 源码与测试](docs/S12_HAKIOS_XNUP_PREFLIGHT.md)。

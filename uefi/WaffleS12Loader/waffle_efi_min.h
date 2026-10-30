@@ -31,7 +31,8 @@ typedef struct {
 typedef struct {
     wa_table_header hdr;
     void *raise_tpl,*restore_tpl;
-    void *allocate_pages,*free_pages;
+    wa_efi_status(EFIAPI *allocate_pages)(int,int,uint64_t,uint64_t *);
+    wa_efi_status(EFIAPI *free_pages)(uint64_t,uint64_t);
     wa_efi_status(EFIAPI *get_memory_map)(uint64_t *,void *,uint64_t *,uint64_t *,uint32_t *);
     wa_efi_status(EFIAPI *allocate_pool)(int,uint64_t,void **);
     wa_efi_status(EFIAPI *free_pool)(void *);
