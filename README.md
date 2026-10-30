@@ -1,3 +1,8 @@
+> **S12 新增（2026-10-31）：** 已生成真正的 ARM64 UEFI PE/COFF 预检程序 `WaffleS12Preflight.efi`，
+> 并加入 HakiOS XNUP 格式兼容解析和实机设备树校验；**尚不能启动 XNU/iOS**，不可刷写。
+> 代码及运行界限见 [S12 源码与测试](docs/S12_HAKIOS_XNUP_PREFLIGHT.md)。
+> **Actions 仅手动触发**，不会因提交自动运行。
+
 ## S11 离线验证进度（2026-10-28）
 
 新增 **UEFI 当前启动 FDT 的安全边界与 waffle 校验、WFLG 控制台诊断、EDK2 源码包**；AArch64 COFF 与 UEFI Mock 测试通过，**未构建 EFI 可执行文件，未在一加 12 实机启动，不能刷机**。详见 [S11 文档](docs/S11_UEFI_WAFFLE_PROBE.md)。GitHub Actions 仅手动触发。

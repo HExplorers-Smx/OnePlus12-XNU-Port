@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "milestone": "S12-preflight",
+  "target": {
+    "device": "OnePlus 12 PJD110",
+    "board": "waffle",
+    "soc": "SM8650",
+    "fdt_model_required_suffix": ",waffle",
+    "fdt_compatible_required_prefix": "qcom,pineapple",
+    "gpu": "Adreno 750 v2"
+  },
+  "xnup": {
+    "source": "superboyyy/hakios-arm64e-dada/base/xnuloader/mkpayload.py",
+    "magic_le": "0x50554e58",
+    "entry_name_bytes": 16,
+    "record_header_bytes": 24,
+    "alignment_bytes": 16,
+    "preflight_only": true
+  },
+  "handoff": {
+    "uefi_fd_base": null,
+    "uefi_fd_size": null,
+    "payload_reserved_base": null,
+    "payload_reserved_size": null,
+    "gop_framebuffer_base": null,
+    "gic_redistributor_base": null,
+    "watchdog_recovery_verified": false,
+    "usb_gadget_debug_verified": false,
+    "xnu_macho_rebase_and_fixups_implemented": false,
+    "exit_boot_services_implemented": false,
+    "device_boot_tested": false
+  },
+  "policy": {
+    "boot_partitions_write_allowed": false,
+    "dsu_install_allowed": false,
+    "vendor_firmware_in_repository": false,
+    "actions_manual_only": true
+  }
+}

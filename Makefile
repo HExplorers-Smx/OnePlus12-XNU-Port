@@ -65,3 +65,10 @@ s11-test:
 	python3 -m unittest discover -s tests -p 'test_s11_native.py' -v
 s11-stage:
 	python3 tools/s11_stage_edk2.py --out output/edk2-packages
+
+# S12: Native AArch64 EFI executable and HakiOS XNUP preflight (NOT a boot image).
+.PHONY: s12-test s12-efi
+s12-test:
+	python3 -m unittest tests.test_s12_xnup -v
+s12-efi:
+	bash tools/s12_build_efi.sh

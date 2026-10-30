@@ -1,0 +1,12 @@
+{
+  "stage": "S12",
+  "date": "2026-10-31",
+  "host_unit_tests": 118,
+  "host_failures": 0,
+  "host_skips_with_private_evidence": 0,
+  "sanitizer": "S12 tests PASS (ASan/UBSan)",
+  "efi_output": "ARM64 PE32+ UEFI application",
+  "uefi_hardware_boot_tested": false,
+  "xnu_kernel_execution_tested": false,
+  "actions_runs_started": 0
+}
